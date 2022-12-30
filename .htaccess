@@ -1,0 +1,41 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+#Match directories for redirect to HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(gotham/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(perfect-playground/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(legendary-therapy/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(ebs-mobile/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(rcm-mobile/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(bells-nurses/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(bells-employment/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(rcm/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(ei-demo-mobile/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(artistic-ei-mobile/.*)$ https://%{SERVER_NAME}/$1 [R=301,L]
+
+
+</IfModule>
+
